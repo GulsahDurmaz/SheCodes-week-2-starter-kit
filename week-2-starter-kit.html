@@ -67,13 +67,18 @@
       <button>Apply Now</button>
     </section>
     <script>
-      let askAge = prompt("How old are you?");
-      if (askAge >= 18) {
-        alert("You can apply to SheCodes! 🥳");
+      function canSpeakPortugese() {
+        let askCountry = prompt("Where are you from?");
+        country = askCountry.toLowerCase();
+        country = country.trim();
+        country = country.replace("brasil", "brazil");
+        if (country === "brazil" || country === "portugal") {
+          alert("You speak Portuguese");
+        } else {
+          alert("Go learn Portuguese!");
+        }
       }
-      if (askAge < 18) {
-        alert("You cannot apply ☹️");
-      }
+      canSpeakPortugese();
     </script>
   </body>
 </html>
