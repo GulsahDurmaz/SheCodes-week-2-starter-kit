@@ -70,10 +70,11 @@
       function applyUs() {
         let name = prompt("What is your name?");
         let age = prompt("How old are you?");
+        let heading = document.querySelector("h1");
         if (age >= 18) {
-          alert("Hi, " + name + "! Welcome to SheCodees !");
+          heading.innerHTML = "Hi, " + name + "! Welcome to SheCodees !";
         } else {
-          alert("Sorry, " + name + "! You cannot join SheCodes");
+          aheading.HTML = "Sorry, " + name + "! You cannot join SheCodes";
         }
       }
       let applyButton = document.querySelector("button");
